@@ -72,11 +72,26 @@ body {
 }
 
 .get-ticket a {
+    display: inline-block;
     font-size: 1.5rem;
-    color: #06b6d4;
-    text-shadow: 0 0 8px,
-                        -1px 0 0px,
-                        0 1px 2px ;
+    color: #ffffff;
+    background: #06b6d4;
+    padding: 8px 24px;
+    border: 1px solid #67f5ff;
+    border-radius: 999px;
+    text-decoration: none;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 8px rgba(6, 182, 212, 0.8),
+                0 0 20px rgba(6, 182, 212, 0.6),
+                0 0 36px rgba(6, 182, 212, 0.35);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.get-ticket a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 12px rgba(6, 182, 212, 1),
+                0 0 28px rgba(6, 182, 212, 0.8),
+                0 0 48px rgba(6, 182, 212, 0.55);
 }
 
 .text-pressure {
